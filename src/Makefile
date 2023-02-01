@@ -1,8 +1,8 @@
-.PHONY: all clean test s21_matrix.a gcov_report linter cppcheck style_check
+.PHONY: all clean test sfleta_matrix.a gcov_report linter cppcheck style_check
 CC=gcc
 CFLAGS=-c -std=c11 
 CFLAGS_WARN= -Wpedantic -Wshadow -Wuninitialized -Wall -Werror -Wextra 
-PROJECTNAME=s21_matrix
+PROJECTNAME=sfleta_matrix
 LDFLAGS= -lcheck -L. -l$(PROJECTNAME)
 GFLAGS= -fprofile-arcs -ftest-coverage
 HEADERS=$(PROJECTNAME).h
